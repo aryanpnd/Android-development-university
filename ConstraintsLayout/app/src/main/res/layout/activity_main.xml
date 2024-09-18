@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- ImageView at the top -->
+    <ImageView
+        android:id="@+id/boquetImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/img"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        />
+
+    <!-- ScrollView to make the content scrollable -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/boquetImageView"
+        app:layout_constraintBottom_toTopOf="@id/submitButton"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title for Bouquet Size -->
+            <TextView
+                android:id="@+id/titleBouquetSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Bouquet Size"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <!-- RadioGroup for Bouquet Size -->
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:id="@+id/radioSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small" />
+
+                <RadioButton
+                    android:id="@+id/radioMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium" />
+
+                <RadioButton
+                    android:id="@+id/radioLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Large" />
+            </RadioGroup>
+
+            <!-- Title for Occasion Type -->
+            <TextView
+                android:id="@+id/titleOccasionType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Occasion Type"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <!-- RadioGroup for Occasion Type -->
+            <RadioGroup
+                android:id="@+id/radioGroupOccasion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:id="@+id/radioBirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Birthday" />
+
+                <RadioButton
+                    android:id="@+id/radioAnniversary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anniversary" />
+
+                <RadioButton
+                    android:id="@+id/radioGraduation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Graduation" />
+            </RadioGroup>
+
+            <!-- Title for Delivery Speed -->
+            <TextView
+                android:id="@+id/titleDeliverySpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Delivery Speed"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <!-- RadioGroup for Delivery Speed -->
+            <RadioGroup
+                android:id="@+id/radioGroupDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:id="@+id/radioStandardDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Standard Delivery" />
+
+                <RadioButton
+                    android:id="@+id/radioExpressDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Express Delivery" />
+
+                <RadioButton
+                    android:id="@+id/radioSameDayDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Same-Day Delivery" />
+            </RadioGroup>
+
+            <!-- Title for Flower Types -->
+            <TextView
+                android:id="@+id/titleFlowerTypes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Flower Types"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <!-- CheckBoxes for Flower Types -->
+            <CheckBox
+                android:id="@+id/checkboxRoses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Include Roses"
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxTulips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Include Tulips"
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxLilies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Include Lilies"
+                android:layout_marginTop="8dp" />
+
+            <!-- Title for Add-ons -->
+            <TextView
+                android:id="@+id/titleAddOns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Add-ons"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <!-- CheckBoxes for Add-ons -->
+            <CheckBox
+                android:id="@+id/checkboxChocolates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Chocolates"
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxGreetingCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add a Greeting Card"
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxVase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Include a Vase"
+                android:layout_marginTop="8dp" />
+
+            <!-- Title for Packaging Style -->
+            <TextView
+                android:id="@+id/titlePackagingStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Packaging Style"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <!-- CheckBoxes for Packaging Style -->
+            <CheckBox
+                android:id="@+id/checkboxRibbon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wrapped in Ribbon"
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxEcoPackaging"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eco-Friendly Packaging"
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxLuxuryBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luxury Box"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Order Now"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/scrollView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#F43556"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
