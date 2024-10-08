@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/departmentSelectTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Select Department"
+        android:textSize="24sp"
+        android:textColor="@color/grayText"
+        android:textStyle="bold"/>
+
+    <androidx.gridlayout.widget.GridLayout android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:alignmentMode="alignBounds"
+        app:columnCount="3"
+        app:layout_constraintTop_toBottomOf="@id/departmentSelectTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:rowCount="3"
+        app:useDefaultMargins="true">
+
+        <!-- Card 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/department_image_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/department_image_1"
+                android:contentDescription="Image 1" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/department_image_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/department_image_2"
+                android:contentDescription="Image 2" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/department_image_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/department_image_3"
+                android:contentDescription="Image 3" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 4 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/department_image_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/department_image_4"
+                android:contentDescription="Image 4" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 5 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/department_image_5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/department_image_5"
+                android:contentDescription="Image 5" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 6 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/department_image_6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/department_image_6"
+                android:contentDescription="Image 6" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 7 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/department_image_7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/department_image_7"
+                android:contentDescription="Image 7" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 8 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/department_image_8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/department_image_8"
+                android:contentDescription="Image 8" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 9 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/department_image_9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/department_image_9"
+                android:contentDescription="Image 9" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

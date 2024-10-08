@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintTop_toBottomOf="@+id/welcomeMessage"
+    android:scrollbars="none"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- LinearLayout inside HorizontalScrollView to hold cards -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Card 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/cardImage1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:contentDescription="Card Image 1"
+                android:scaleType="fitXY"
+                android:src="@drawable/promote_banner_1" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/cardImage2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/promote_banner_2"
+                android:contentDescription="Card Image 2" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Add more cards as needed -->
+    </LinearLayout>
+</HorizontalScrollView>
