@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Button to open a URL -->
+    <Button
+        android:id="@+id/open_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open URL" />
+
+    <!-- Button to open Navigation -->
+    <Button
+        android:id="@+id/button_navigate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Navigate" />
+
+    <!-- Button to open Camera -->
+    <Button
+        android:id="@+id/button_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Camera" />
+
+    <!-- Button to make a call -->
+    <Button
+        android:id="@+id/button_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make a Call" />
+
+    <!-- Button to view Contacts -->
+    <Button
+        android:id="@+id/button_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Contacts" />
+
+    <!-- Button to open Gallery -->
+    <Button
+        android:id="@+id/button_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Gallery" />
+
+    <!-- Button to open Dialer -->
+    <Button
+        android:id="@+id/button_dialer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Dialer" />
+
+</LinearLayout>

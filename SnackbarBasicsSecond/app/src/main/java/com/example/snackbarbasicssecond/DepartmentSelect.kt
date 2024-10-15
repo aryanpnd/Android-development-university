@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 
 class DepartmentSelect : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,9 +47,15 @@ class DepartmentSelect : AppCompatActivity() {
         val cards = listOf(card1, card2, card3, card4, card5, card6, card7, card8, card9)
         for (i in cards.indices) {
             cards[i].setOnClickListener {
-                val intent = Intent(this, DepartmentDetailActivity::class.java)
-                intent.putExtra("imageResId", imageResources[i]) // Pass the actual image resource ID
-                startActivity(intent)
+                // prompt a snackbar and if pressed yes then only navigate
+                // to the department detail activity
+                Snackbar.make(it, "Department Selected", Snackbar.LENGTH_LONG)
+                    .setAction("OK") {
+                        // Navigate to DepartmentDetailActivity
+                        val intent = Intent(this, DepartmentDetailActivity::class.java)
+                        intent.putExtra("imageResId", imageResources[i])
+                        startActivity(intent)
+                    }
             }
         }
     }
