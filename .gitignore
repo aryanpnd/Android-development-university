@@ -1,0 +1,48 @@
+# Android-specific files
+*.iml
+.gradle/
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+
+# Ignore Kotlin build files
+*.kotlin_module
+*.class
+
+# Generated files
+app/build/
+*/build/
+*.apk
+*.ap_
+
+# Ignore test results
+test-results/
+test-output/
+
+# Ignore log files
+*.log
+
+# Ignore IntelliJ/Android Studio-specific files
+.idea/workspace.xml
+.idea/libraries/
+.idea/tasks.xml
+.idea/dictionaries/
+.idea/vcs.xml
+.idea/modules.xml
+
+# Ignore OS-specific files
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+
+# Ignore dependency files
+*.jar
+*.war
+*.ear
+
+# Ignore sensitive files
+*.keystore
